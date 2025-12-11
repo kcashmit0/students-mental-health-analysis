@@ -36,7 +36,6 @@ The analysis uses:
 3. Review results showing mental health trends by stay duration
 
 ## Source
-
 DataCamp Intermediate SQL - Analyzing Students' Mental Health project
-```
+
 
