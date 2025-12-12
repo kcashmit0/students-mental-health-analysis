@@ -1,41 +1,63 @@
 # Student Mental Health Analysis
 
-Analysis of international students' mental health indicators based on length of stay.
+Comprehensive SQL analysis exploring mental health patterns among university students, comparing domestic vs international students across multiple dimensions.
 
-## Project Overview
+## Dataset
+Student mental health survey including:
+- **Depression scores** (PHQ-9)
+- **Social connectedness** (SCS)
+- **Acculturative stress** (AS)
+- **Demographics**: Age, gender, student type, length of stay
 
-This analysis examines how international students' mental health metrics vary by their length of stay using data from a student mental health survey.
+## Analysis Questions
 
-## Metrics Analyzed
+### 1. Length of Stay Impact
+Does duration in country affect international students' mental health?
 
-- **PHQ Score** (todep): Depression screening
-- **SCS Score** (tosc): Social Connectedness Scale  
-- **AS Score** (toas): Acculturative Stress
+### 2. Domestic vs International Comparison
+Which group faces greater mental health challenges overall?
 
-## Key Question
+### 3. High-Risk Students
+How many students have severe depression (PHQ > 20)?
 
-How do mental health indicators differ among international students based on their length of stay?
+### 4. Gender Patterns
+Are there significant gender differences in mental health outcomes?
 
-## SQL Query
+### 5. Age Group Analysis
+Does age correlate with depression and stress levels?
 
-The analysis uses:
-- Filtering for international students only (`WHERE inter_dom = 'Inter'`)
-- Grouping by length of stay
-- Calculating average scores for each mental health metric
-- Counting students in each stay duration group
+### 6. Most Vulnerable Demographics
+Which groups face the highest combined mental health risks?
 
-## Tools Used
+### 7. Social Isolation Risk
+Who experiences critically low social connectedness?
 
+### 8. Severe Depression Profiles
+Complete demographic breakdown of students with severe depression (PHQ > 24)
+
+## Key Findings
+- International students show significantly higher acculturative stress
+- [Run queries and add your actual findings here]
+- [Update after completing analysis]
+
+## SQL Techniques Used
+- Aggregate functions (COUNT, AVG)
+- GROUP BY with multiple columns
+- CASE statements for age grouping
+- WHERE filtering for risk thresholds
+- ORDER BY and LIMIT for ranking
+
+## Files
+- `analysis.sql` - 8 comprehensive queries with documentation
+- `analysis_old.sql` - Original single query (archived)
+
+## Tools
 - MySQL Workbench
-- Dataset: Student mental health survey data (DataCamp Intermediate SQL)
+- Source: DataCamp Intermediate SQL Course
 
 ## How to Run
-
-1. Import the students dataset into MySQL
-2. Run `analysis.sql` query
-3. Review results showing mental health trends by stay duration
-
-## Source
-DataCamp Intermediate SQL - Analyzing Students' Mental Health project
-
-
+```sql
+-- Load students dataset into MySQL
+-- Execute queries in analysis.sql
+-- Review results for mental health insights
+```
